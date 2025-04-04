@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [CommonModule, RouterOutlet],
+  template: `
+    <h1>Gerenciador de Produtos</h1>
+    <router-outlet></router-outlet>
+  `,
+  styles: []
 })
 export class AppComponent {
-  title = 'produto-front';
+  title = 'product-management';
 }
