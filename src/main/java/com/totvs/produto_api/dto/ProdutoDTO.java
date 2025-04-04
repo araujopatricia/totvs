@@ -10,6 +10,11 @@ public class ProdutoDTO {
     private Integer quantidadeEstoque;
     private Long categoriaId;
 
+    public ProdutoDTO(Long id, String nome, String descricao, BigDecimal preco, int quantidadeEstoque, long categoriaId) {
+    }
+    public ProdutoDTO() {
+    }
+
     public Long getId() {
         return id;
     }

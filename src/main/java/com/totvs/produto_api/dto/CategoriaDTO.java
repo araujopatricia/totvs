@@ -1,22 +1,16 @@
 package com.totvs.produto_api.dto;
 
 public class CategoriaDTO {
-    private String categoria;
-    private Integer quantidadeTotalEstoque;
+    private String nome;
+    private Long estoqueTotal;
 
-    public String getCategoria() {
-        return categoria;
+    public CategoriaDTO(String nome, Long estoqueTotal) {
+        this.nome = nome;
+        this.estoqueTotal = estoqueTotal;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
-
-    public Integer getQuantidadeTotalEstoque() {
-        return quantidadeTotalEstoque;
-    }
-
-    public void setQuantidadeTotalEstoque(Integer quantidadeTotalEstoque) {
-        this.quantidadeTotalEstoque = quantidadeTotalEstoque;
-    }
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
+    public Long getEstoqueTotal() { return estoqueTotal; }
+    public void setEstoqueTotal(Long estoqueTotal) { this.estoqueTotal = estoqueTotal; }
 }
